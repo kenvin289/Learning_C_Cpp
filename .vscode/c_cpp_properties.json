@@ -72,7 +72,7 @@
             }
         },
         {
-            "name": "Dev-c",
+            "name": "Cygwin",
             "includePath": [
                 "${workspaceRoot}",
                 "C:\\cygwin\\usr\\i686-w64-mingw32\\sys-root\\mingw\\include"
