@@ -12,7 +12,11 @@
                 "-g", "${file}", "-o", "${fileBasenameNoExtension}"//, "-lws2_32"
                 //"-g", "${file}", "-I${workspaceRoot}", "-lws2_32"
 
-            ]
+            ],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            }
         }
     ]
 }
