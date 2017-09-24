@@ -2,14 +2,16 @@
     // See https://go.microsoft.com/fwlink/?LinkId=733558
     // for the documentation about the tasks.json format
     "version": "2.0.0",
+    
     "tasks": [
         {
-            "taskName": "Build C++ (by GNU Compiler Collection)",
+            "taskName": "Build C++",
             "type": "shell",
             "command": "g++",
             "args": [
-                "-g", "my_ping.cpp", "-o", "main", "-lws2_32"
-                //"-g my_ping.cpp -o main -lws2_32"
+                "-g", "${file}", "-o", "${fileBasenameNoExtension}"//, "-lws2_32"
+                //"-g", "${file}", "-I${workspaceRoot}", "-lws2_32"
+
             ]
         }
     ]
